@@ -1,0 +1,11 @@
+{% extends 'task1/menu.html' %}
+
+{% block pagename %}
+Корзина
+{% endblock %}
+
+{% block content %}
+<h1>Корзина</h1>
+<p>Корзина пока пуста. Вернитесь в <a href="{% url 'shop_page' %}">Магазин</a> для выбора товаров.</p>
+<a href="{% url 'main_page' %}"><button>На главную</button></a>
+{% endblock %}

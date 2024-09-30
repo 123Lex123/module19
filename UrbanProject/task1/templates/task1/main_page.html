@@ -1,0 +1,16 @@
+{% extends 'task1/menu.html' %}
+
+{% block pagename %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+<h1>Главная страница</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'main_page' %}">Главная</a></li>
+            <li><a href="{% url 'shop_page' %}">Магазин</a></li>
+            <li><a href="{% url 'cart_page' %}">Корзина</a></li>
+        </ul>
+    </nav>
+{% endblock %}
